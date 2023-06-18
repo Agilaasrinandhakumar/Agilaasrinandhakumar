@@ -18,11 +18,11 @@ CREATE TABLE customer_09(
 alter table order_table add column customer_name varchar(50)
 select * from order_table;
 insert into order_table (customer_id,order_date,order_id,product,product_id,in_time,out_time,arrival_date,dispact_date,sender_location,receiver_location,social_media) VALUES
-(1001,'2023-01-11',258000,'smartpen',001,'10:01:01','11:30:01','2023-01-09','2023-01-06','madurai','chennai','facebook','dhana'),
-(1002,'2023-02-20',258100,'mouse',002,'10:03:01','11:05:01','2023-03-09','2023-03-06','mumbai','chennai','instagram','karena'),
-(1003,'2023-03-11',258200,'keyboard',003,'10:01:01','11:12:01','2023-02-09','2023-02-06','mumbai','chennai','facebook','ashwini'),
-(1004,'2023-03-19',258300,'monitor',004,'10:01:01','11:23:01','2023-04-09','2023-04-06','madurai','chennai','ekart','akila'),
-(1005,'2023-04-01',258400,'printer',005,'10:01:01','11:13:01','2023-05-09','2023-05-06','vellore','chennai','snapdeal','sri');
+(1001,'2023-01-11',258000,'smartpen',001,'10:01:01','11:30:01','2023-01-09','2023-01-06','madurai','chennai','facebook','revathi'),
+(1002,'2023-02-20',258100,'mouse',002,'10:03:01','11:05:01','2023-03-09','2023-03-06','mumbai','chennai','instagram','nandha'),
+(1003,'2023-03-11',258200,'keyboard',003,'10:01:01','11:12:01','2023-02-09','2023-02-06','mumbai','chennai','facebook','kumra'),
+(1004,'2023-03-19',258300,'monitor',004,'10:01:01','11:23:01','2023-04-09','2023-04-06','madurai','chennai','ekart','sanjai'),
+(1005,'2023-04-01',258400,'printer',005,'10:01:01','11:13:01','2023-05-09','2023-05-06','vellore','chennai','snapdeal','annie');
 dml command
 1.to change the particular value inside a table
 update order_table set product = headphones where customer_id=1002
