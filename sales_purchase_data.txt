@@ -1,0 +1,26 @@
+desc sales_purchase_data
+drop table if exists sales_purchase_data_updated
+CREATE TABLE sales_purchase_data_update AS
+SELECT
+Row_ID,
+Order_ID,
+STR_TO_DATE(Order_Date,'%d-%m-%Y')AS Order_Date,
+STR_TO_DATE(Ship_date,'%d-%m-%Y')AS ship_Date,
+ship_mode,
+customer_ID,
+customer_ID,
+segment,
+country,
+city,
+state,
+region
+FROM sales_purchase_data;
+Select * from sales_purchase_data_updated
+desc sales_purchase_data_updated
+select * from sales_purchase_data_updated limit 20
+select 
+order_data;
+month (order_date)as month,
+year (order_date)as year,
+day (order_date)as day,
+from sales_purchase_date_update limit 5;
